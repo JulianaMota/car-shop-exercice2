@@ -1,0 +1,1 @@
+const template = document.querySelector("#detailTemplate").content;
