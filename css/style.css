@@ -276,6 +276,26 @@ img {
     display: none;
 }
 
-@media  {
+@media all and (max-width:750px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .article-detail{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+    }
+    .article-detail .h2-detail{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img-detail{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .video{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
     
 }
