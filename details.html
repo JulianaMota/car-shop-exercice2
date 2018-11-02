@@ -5,24 +5,23 @@
     <title>Subpage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 </head>
 <body>
     <div class="drip"></div>
     <h1>Car Detail Info</h1>
-    <a href="index.html">Show all cars</a>
-    <main>
+    <a class="detail-a" href="index.html">Show all cars</a>
+    <main class="main-detail">
         <template id="detail-template">
-            <article>
-                <header>
-                    <img src="" alt="car">
-                    <h2> Car Name</h2>
-                    <div class="body"></div>
-                    <p class="year"><strong>Year:</strong> <span></span></p>
-                    <p class="color"><strong>Color:</strong> <span></span></p>
-                    <p class="horse-power"><strong>Horse Power (Net @ RPM):</strong> <span></span></p>
-                    <p class="engine"><strong>Engine:</strong> <span></span></p>
-                    <p class="price"><strong>Price:</strong> <span></span> $ </p>
-                </header>
+            <article class="article-detail">
+                <h2 class="h2-detail">Car Name</h2>
+                <img class="img-detail" src="" alt="car">
+                <div class="body"></div>
+                <p class="year p-detail"><strong>Year:</strong> <span></span></p>
+                <p class="color p-detail"><strong>Color:</strong> <span></span></p>
+                <p class="horse-power p-detail"><strong>Horse Power (Net @ RPM):</strong> <span></span></p>
+                <p class="engine p-detail"><strong>Engine:</strong> <span></span></p>
+                <p class="price p-detail"><strong>Price:</strong> <span></span> $ </p>
                 <div class="video"></div>
             </article>
         </template>
