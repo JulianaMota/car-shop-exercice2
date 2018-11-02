@@ -47,7 +47,6 @@ function showSingleCar(car){
     document.querySelector("main").appendChild(copy);
 
     myLoader.classList.add("hide");
-    //clearInterval(int);
 }
 
 
