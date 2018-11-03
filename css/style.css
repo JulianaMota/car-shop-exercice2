@@ -6,10 +6,8 @@
 
 body{
     margin: 0;
-    background-image: url("../images/bj5.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../images/bj5.jpg") no-repeat center;
+    background-size: 180%;
 }
 
 
@@ -69,8 +67,7 @@ article a{
     border: solid 2px cadetblue;
     width: 70%;
     justify-self: center;
-    margin: 20px 0px;
-
+    margin: 20px 0;
 }
 
 
@@ -189,8 +186,8 @@ img {
     bottom: 0;
     left: 0;
     content: '';
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border: solid 4px white;
     border-radius: 50%;
     opacity: 0;
@@ -240,8 +237,8 @@ img {
         bottom: 50px;
         left: 100px;
         opacity: 0;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
     25.001% {
         opacity: 1;
@@ -257,8 +254,8 @@ img {
         bottom: 50px;
         left: 100px;
         opacity: 1;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
     }
     43% {
         bottom: 0;

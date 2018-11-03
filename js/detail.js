@@ -1,5 +1,4 @@
 const template = document.querySelector("#detail-template").content;
-const parameters = new URLSearchParams(window.location.search);
 const carID = parameters.get("carid");
 
 function loadOneCar(carID){

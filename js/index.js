@@ -1,6 +1,5 @@
 const template = document.querySelector("#car-template").content;
 const nave = document.querySelector("#categories-nav");
-const parameters = new URLSearchParams(window.location.search);
 const categID = parameters.get("catid");
 
 function getCategories(){
@@ -13,7 +12,6 @@ function getCarsByCat(categID){
 
 function makeCatMenu(categories){
     categories.forEach(categorie=>{
-        console.log(categorie);
         const newA = document.createElement("a");
         newA.textContent=categorie.name;
         newA.href="?catid="+categorie.id;
@@ -24,12 +22,10 @@ function makeCatMenu(categories){
 getCategories();
 
 function showCars(carList){
-    //console.log(carList)
     carList.forEach(showSingleCar)
 }
 
 function showSingleCar(car){
-    //console.log(car._embedded["wp:featuredmedia"])
     //make copy of the template
     const copy = template.cloneNode(true);
     copy.querySelector("h2").textContent=car.title.rendered;
