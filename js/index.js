@@ -11,10 +11,10 @@ function getCarsByCat(categID){
 }
 
 function makeCatMenu(categories){
-    categories.forEach(categorie=>{
+    categories.forEach(category=>{
         const newA = document.createElement("a");
-        newA.textContent=categorie.name;
-        newA.href="?catid="+categorie.id;
+        newA.textContent=category.name;
+        newA.href="?catid="+category.id;
         nave.appendChild(newA);
     })
 }
